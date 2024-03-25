@@ -6,12 +6,10 @@ import java.util.Optional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.LBG.legacy.domain.Item;
 import com.LBG.legacy.repo.ItemRepo;
 
-@CrossOrigin("*")
 @Service
 public class ItemService {
 	private ItemRepo repo;
@@ -64,13 +62,11 @@ public class ItemService {
 			}
 		}
 
-
 		if (newItem.getQuantity() != null && newItem.getQuantity() != 0) {
 
 			existing.setQuantity(newItem.getQuantity());
 
 		}
-
 
 		if (newItem.getCart() != null) {
 			existing.setCart(newItem.getCart());
