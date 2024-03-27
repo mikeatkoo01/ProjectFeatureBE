@@ -15,62 +15,102 @@ public class Item {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
 	private Integer id;
+
 	private String name;
+	private String url;
 	private Double price;
 	private Integer quantity;
+
 	@JsonBackReference
 	@ManyToOne
 	private Cart cart;
-
-
 
 	public Item() {
 		super();
 	}
 
+	/**
+	 * @return the id
+	 */
 	public Integer getId() {
 		return id;
 	}
 
+	/**
+	 * @param id the id to set
+	 */
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
+	/**
+	 * @return the url
+	 */
+	public String getUrl() {
+		return url;
+	}
+
+	/**
+	 * @param url the url to set
+	 */
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	/**
+	 * @return the name
+	 */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * @param name the name to set
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * @return the price
+	 */
 	public Double getPrice() {
 		return price;
 	}
 
+	/**
+	 * @param price the price to set
+	 */
 	public void setPrice(Double price) {
 		this.price = price;
 	}
 
+	/**
+	 * @return the quantity
+	 */
 	public Integer getQuantity() {
 		return quantity;
 	}
 
+	/**
+	 * @param quantity the quantity to set
+	 */
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 
+	/**
+	 * @return the cart
+	 */
 	public Cart getCart() {
 		return cart;
 	}
 
+	/**
+	 * @param cart the cart to set
+	 */
 	public void setCart(Cart cart) {
 		this.cart = cart;
-	}
-
-	@Override
-	public String toString() {
-		return "Item [name=" + name + ", price=" + price + ", quantity=" + quantity + "]";
 	}
 
 }
