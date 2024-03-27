@@ -1,7 +1,5 @@
-DROP TABLE IF EXISTS `item`; 
-DROP TABLE IF EXISTS `cart`; 
-DROP TABLE IF EXISTS `checkout`;
 
+DROP TABLE IF EXISTS `cart`;
 CREATE TABLE `cart` (
     `id` INT PRIMARY KEY AUTO_INCREMENT, 
     `customer` VARCHAR(255)
@@ -25,4 +23,12 @@ CREATE TABLE `checkout` (
     `post_code` VARCHAR(10),
     `cart_id` INT,
     FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`)
+);
+
+CREATE TABLE `user` (
+	`id` INT PRIMARY KEY AUTO_INCREMENT, 
+	`user` VARCHAR (255), 
+	`pwd` VARCHAR (255) 
+
+
 );

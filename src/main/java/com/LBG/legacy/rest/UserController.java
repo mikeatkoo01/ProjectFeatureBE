@@ -18,6 +18,7 @@ import com.LBG.legacy.services.UserService;
 @RestController
 @RequestMapping("/user")
 @CrossOrigin
+
 public class UserController {
 
 	private UserService service;

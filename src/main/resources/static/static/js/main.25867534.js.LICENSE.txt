@@ -4,6 +4,12 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*!
+  * $script.js JS loader & dependency manager
+  * https://github.com/ded/script.js
+  * (c) Dustin Diaz 2014 | License MIT
+  */
+
 /**
  * @license React
  * react-dom.production.min.js
@@ -45,7 +51,7 @@
  */
 
 /**
- * @remix-run/router v1.15.1
+ * @remix-run/router v1.15.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -56,7 +62,7 @@
  */
 
 /**
- * React Router DOM v6.22.1
+ * React Router DOM v6.22.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -67,7 +73,7 @@
  */
 
 /**
- * React Router v6.22.1
+ * React Router v6.22.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -76,3 +82,8 @@
  *
  * @license MIT
  */
+
+/**
+* @link https://github.com/gajus/sister for the canonical source repository
+* @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
+*/
